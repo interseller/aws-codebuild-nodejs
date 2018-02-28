@@ -30,6 +30,7 @@ RUN apt-get update \
 RUN wget "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
     && python /tmp/get-pip.py \
     && pip install awscli \
+    && pip install awsebcli \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV NODE_VERSION="8.9.4"
