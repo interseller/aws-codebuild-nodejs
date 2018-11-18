@@ -33,7 +33,7 @@ RUN wget "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
     && pip install awsebcli \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV NODE_VERSION="8.12.0"
+ENV NODE_VERSION="10.13.0"
 
 RUN set -ex \
     && for key in \
